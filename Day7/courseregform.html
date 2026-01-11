@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Course Registration Form</title>
+  </head>
+
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form>
+      <!-- Personal Details -->
+      <fieldset>
+        <legend><b>Personal details</b></legend>
+
+        <table>
+          <tr>
+            <td>First Name</td>
+            <td><input type="text" placeholder="Ex: G Usha" required /></td>
+          </tr>
+
+          <tr>
+            <td>Surname</td>
+            <td><input type="text" placeholder="Ex: Shree" required /></td>
+          </tr>
+
+          <tr>
+            <td>Mobile number</td>
+            <td>
+              <input type="tel" placeholder="Ex: 987-897-0907" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" placeholder="Ex: abc@gmail.com" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="password" placeholder="min 5 characters" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Confirm Password</td>
+            <td>
+              <input type="password" placeholder="min 5 characters" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>DOB</td>
+            <td><input type="date" required /></td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" /> Male
+              <input type="radio" name="gender" /> Female
+              <input type="radio" name="gender" /> Custom
+            </td>
+          </tr>
+
+          <tr>
+            <td>Select Country</td>
+            <td>
+              <select>
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>AUSTRALIA</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Upload Picture</td>
+            <td><input type="file" required /></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="reset" value="Reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Course Details -->
+      <fieldset>
+        <legend><b>Course Details</b></legend>
+
+        <table>
+          <tr>
+            <td>Select Course</td>
+            <td>
+              <select>
+                <option>Python Full Stack</option>
+                <option>Java Full Stack</option>
+                <option>Web Development</option>
+                <option>Data Science</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Delivery Mode</td>
+            <td>
+              <input type="checkbox" /> ONLINE <input type="checkbox" /> OFFLINE
+            </td>
+          </tr>
+
+          <tr>
+            <td>Comments</td>
+            <td>
+              <textarea rows="4" cols="30"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
